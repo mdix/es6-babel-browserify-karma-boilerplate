@@ -1,0 +1,17 @@
+{
+  "name": "babel_karma_gulp",
+  "version": "1.0.0",
+  "description": "What I want - babel as transpiler - karma for unittesting - gulp for building",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "gulp": "^3.9.0",
+    "vinyl-buffer": "^1.0.0"
+  }
+}

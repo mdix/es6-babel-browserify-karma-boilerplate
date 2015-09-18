@@ -1,4 +1,4 @@
 What I want
 - babel as transpiler
-- tape for unittesting
+- karma for unittesting
 - gulp for building
