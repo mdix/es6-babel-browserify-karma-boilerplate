@@ -1,17 +1,27 @@
 {
-  "name": "babel_karma_gulp",
-  "version": "1.0.0",
-  "description": "What I want - babel as transpiler - karma for unittesting - gulp for building",
-  "main": "index.js",
+  "name": "babel_browserify_karma_gulp",
+  "version": "0.0.1",
+  "description": "es6 for code & tests via babel, browserify, karma & gulp",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babelify": "^6.3.0",
-    "browserify": "^11.1.0",
-    "gulp": "^3.9.0",
-    "vinyl-buffer": "^1.0.0"
+    "babel": "5.8.23",
+    "babelify": "6.3.0",
+    "browserify": "11.1.0",
+    "gulp": "3.9.0",
+    "gulp-karma": "0.0.4",
+    "jasmine-core": "2.3.4",
+    "karma": "0.12.37",
+    "karma-babel-preprocessor": "5.2.2",
+    "karma-browserify": "4.3.0",
+    "karma-jasmine": "0.3.6",
+    "karma-phantomjs-launcher": "0.2.1",
+    "phantomjs": "1.9.18",
+    "rimraf": "2.4.3",
+    "vinyl-source-stream": "1.1.0"
   }
 }
