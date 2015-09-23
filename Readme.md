@@ -18,3 +18,11 @@ npm install
 
 ./node_modules/.bin/gulp
 ```
+
+### Where to go from here
+This is really just a base setup. You might want to:
+
+* add a [index.html](https://raw.githubusercontent.com/h5bp/html5-boilerplate/master/src/index.html) and load 'dist/build.js'
+* add a [webserver](https://www.npmjs.com/package/gulp-webserver) with livereload support
+* add a [javascript linter](https://www.npmjs.com/package/gulp-eslint/)
+* ...
