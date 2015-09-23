@@ -19,6 +19,8 @@ npm install
 ./node_modules/.bin/gulp
 ```
 
+This will run the karma tests and, after they ran successful, build the application in ES5 to `build/build.js`.
+
 ### Where to go from here
 This is really just a base setup. You might want to:
 
