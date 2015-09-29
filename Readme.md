@@ -1,4 +1,5 @@
-[![Dependency Status](https://www.versioneye.com/user/projects/560a4e40a081be000a000426/badge.svg?style=flat)](https://www.versioneye.com/user/projects/560a4e40a081be000a000426)
+[![Dependency Status](https://www.versioneye.com/user/projects/560a4e40a081be000a000426/badge.svg?style=flat)](https://www.versioneye.com/user/projects/560a4e40a081be000a000426) [![Build Status](https://travis-ci.org/mdix/es6-babel-browserify-karma-boilerplate.svg)](https://travis-ci.org/mdix/es6-babel-browserify-karma-boilerplate)
+
 ## ES6 Babel Browserify Karma Boilerplate
 This is an boilerplate repo to make it easy to create a project where production code & tests can be written in ES6. 
 It's just a combination of gulp (build tool), browserify (bundler), karma (testing framework) and babel (JS compiler). 
