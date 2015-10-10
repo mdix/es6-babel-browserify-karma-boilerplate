@@ -3,7 +3,7 @@ var gulp        = require('gulp');
 var source      = require('vinyl-source-stream');
 var browserify  = require('browserify');
 var babel       = require('babelify');
-var karma       = require('gulp-karma');
+var karmaServer = require('karma').Server;
 var rimraf      = require('rimraf');
 
 /* CONFIGURATION */
@@ -29,14 +29,11 @@ gulp.task('build', ['clean', 'test'], function () {
         .pipe(gulp.dest(CONF.BUILD_DIR));
 });
 
-gulp.task('test', ['clean'], function () {
-    return gulp.src(CONF.SPEC_DIR + '**/*.js')
-        .pipe(karma({
-            configFile: 'karma.conf.js',
-            action: 'run'
-        })).on('error', function (err) {
-            throw err;
-        });
+gulp.task('test', ['clean'], function (done) {
+    new karmaServer({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, done).start();
 });
 
 gulp.task('default', ['build']);
