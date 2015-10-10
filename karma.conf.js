@@ -32,7 +32,7 @@ module.exports = function (config) {
 
         autoWatch: false,
 
-        browsers: ['PhantomJS'],
+        browsers: ['PhantomJS2'],
 
         captureTimeout: 20000,
 
@@ -42,7 +42,7 @@ module.exports = function (config) {
 
         plugins: [
             'karma-jasmine',
-            'karma-phantomjs-launcher',
+            'karma-phantomjs2-launcher',
             'karma-browserify',
             'karma-babel-preprocessor'
         ]
