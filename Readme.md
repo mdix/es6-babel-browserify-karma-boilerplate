@@ -4,7 +4,7 @@
 This is an boilerplate repo to make it easy to create a project where production code & tests can be written in ES6. 
 It's just a combination of gulp (build tool), browserify (bundler), karma (testing framework) and babel (JS compiler). 
 
-### Setup
+### setup
 
 ```bash
 # Clone repo
@@ -15,7 +15,7 @@ cd es6-babel-browserify-karma-boilerplate/
 npm install
 ```
 
-### Running
+### running
 ```bash
 
 ./node_modules/.bin/gulp
@@ -23,7 +23,10 @@ npm install
 
 This will run the karma tests and, after they ran successful, build the application in ES5 to `build/build.js`.
 
-### Where to go from here
+### classical inheritance vs. object composition
+Decide whether you want to use classical inheritance (i. e. use ES6 'class') or object composition (i. e. use stamps). You can read more on stamps [here](https://github.com/stampit-org/stampit/blob/master/README.md).
+
+### where to go from here
 This is really just a base setup. You might want to:
 
 * add a [index.html](https://raw.githubusercontent.com/h5bp/html5-boilerplate/master/src/index.html) and load 'dist/build.js'
