@@ -4,7 +4,7 @@ var source      = require('vinyl-source-stream');
 var browserify  = require('browserify');
 var babel       = require('babelify');
 var karmaServer = require('karma').Server;
-var rimraf      = require('rimraf');
+var del         = require('del');
 
 /* CONFIGURATION */
 var CONF = {};
@@ -13,8 +13,8 @@ CONF.BUILD_DIR  = './build/';
 CONF.SPEC_DIR   = './spec/';
 
 /* TASKS */
-gulp.task('clean', function(cb){
-    rimraf('build/', cb);
+gulp.task('clean', function(){
+    del([CONF.BUILD_DIR + '**/*']);
 });
 
 gulp.task('build', ['clean', 'test'], function () {
