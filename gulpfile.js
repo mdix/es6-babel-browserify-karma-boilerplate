@@ -2,7 +2,6 @@
 var gulp        = require('gulp');
 var source      = require('vinyl-source-stream');
 var browserify  = require('browserify');
-var babel       = require('babelify');
 var karmaServer = require('karma').Server;
 var del         = require('del');
 
@@ -19,7 +18,7 @@ gulp.task('clean', function(){
 
 gulp.task('build', ['clean', 'test'], function () {
     return browserify(CONF.SOURCE_DIR + 'app.js')
-        .transform(babel)
+        .transform("babelify", {presets: ["es2015"]})
         .bundle()
         .on('error', function (err) {
             console.error(err);
